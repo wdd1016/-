@@ -2,11 +2,9 @@ import { useEffect, useState } from "react";
 import FoodContext from "./FoodContext.jsx";
 import axios from "axios";
 
-
 const FoodContextProvider = ({ children }) => {
   const [foods, setFoods] = useState([]);
   const [allFoods, setAllFoods] = useState([]);
-
 
   useEffect(() => {
     const fetchFoods = async () => {
@@ -21,16 +19,13 @@ const FoodContextProvider = ({ children }) => {
     fetchFoods();
   }, []);
 
-
   const addFood = (food, quantity) => {
     if (foods.length === 0) {
       setFoods([{ food, quantity: Number(quantity) }]);
       return;
     }
 
-
     const existingFood = foods.find((item) => item.food.code === food.code);
-
 
     if (existingFood) {
       const newFoods = foods.map((item) =>
@@ -47,21 +42,41 @@ const FoodContextProvider = ({ children }) => {
     }
   };
 
-
   const deleteFood = (food) => {
     const newFoods = foods.filter((f) => f.food.code !== food.code);
     setFoods(newFoods);
   };
 
+  const purchaseFood = (purchasedItems) => {
+    const updatedFoods = foods.map((item) => {
+      const targetQuantity = purchasedItems.find(
+        (p) => p.food.code === item.food.code
+      );
+
+      return targetQuantity
+        ? {
+            ...item,
+            quantity: Number(item.quantity) - Number(targetQuantity.quantity),
+          }
+        : item;
+    });
+    setFoods(updatedFoods);
+  };
 
   return (
     <FoodContext.Provider
-      value={{ foods, addFood, setAllFoods, allFoods, deleteFood }}
+      value={{
+        foods,
+        addFood,
+        setAllFoods,
+        allFoods,
+        deleteFood,
+        purchaseFood,
+      }}
     >
       {children}
     </FoodContext.Provider>
   );
 };
-
 
 export default FoodContextProvider;

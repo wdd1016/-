@@ -1,6 +1,5 @@
 import { NavLink } from "react-router-dom";
 
-
 const nav = [
   {
     id: 0,
@@ -19,17 +18,24 @@ const nav = [
   },
 ];
 
-
 const FoodNavigation = () => {
   return (
     <div
       style={{
         display: "flex",
+        position: "absolute",
+        marginTop: 100,
+        height: 80,
         padding: 10,
+        backgroundColor: "#ccc",
+        borderRadius: 10,
+        border: "1px solid #ddd",
+        justifyContent: "center",
+        alignItems: "center",
       }}
     >
       {nav.map((n, idx) => (
-        <div style={{ padding: 10 }} key={idx}>
+        <div style={{ padding: 10, fontSize: 20 }} key={idx}>
           <NavLink
             key={n.id}
             style={({ isActive }) => (isActive ? { color: "red" } : undefined)}
@@ -42,6 +48,5 @@ const FoodNavigation = () => {
     </div>
   );
 };
-
 
 export default FoodNavigation;

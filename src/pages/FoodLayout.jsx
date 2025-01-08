@@ -1,25 +1,26 @@
 import { Outlet } from "react-router-dom";
 import FoodNavigation from "./FoodNavigation.jsx";
-import FoodContextProvider from "./FoodContextProvider.jsx";
-
 
 const FoodLayout = () => {
   return (
     <div
       style={{
+        width: "80vh",
+        height: "100vh",
+        minHeight: "80vh",
         display: "flex",
         flexDirection: "column",
-        justifyContent: "center",
-        alignItems: "center",
+        paddingTop: "60px",
+        border: "1px solid red",
+        overflow: "auto",
       }}
     >
       <FoodNavigation />
-      <FoodContextProvider>
+      <div style={{ padding: "20px", marginTop: 200 }}>
         <Outlet />
-      </FoodContextProvider>
+      </div>
     </div>
   );
 };
-
 
 export default FoodLayout;
