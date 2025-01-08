@@ -1,0 +1,62 @@
+.wishlist {
+  size: 5px;
+  font-weight: bold;
+  list-style-type: none;
+  margin: 20px auto;
+  width: 80%;
+  max-width: 600px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fdf6f6;
+}
+
+.wishlist h2 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #b33b3b;
+}
+
+.wishlist ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.wishlist li {
+  margin: 2px;
+  border: 1px solid #ddd;
+  margin-bottom: 2px;
+  text-align: center;
+  justify-content: center;
+  padding: 10px;
+
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+.wishlist li:last-child {
+  border-bottom: none;
+}
+
+.wishlist li button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 14px;
+  text-align: center;
+}
+
+.wishlist ul li button:hover {
+  background-color: #c0392b;
+}
+
+.wishlist ul li button svg {
+  margin-left: 5px;
+}

@@ -1,0 +1,32 @@
+.search-list {
+  margin: 20px auto;
+  width: 80%;
+  max-width: 600px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.search-list h2 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #333;
+}
+
+.search-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.search-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+.search-list li:last-child {
+  border-bottom: none;
+}

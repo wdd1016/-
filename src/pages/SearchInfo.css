@@ -1,0 +1,37 @@
+.search-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  align-items: flex-start;
+  margin: 20px;
+}
+
+.search-container input {
+  width: 500px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.search-container button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 13px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.search-container button:hover {
+  background-color: #45a049;
+}
+
+.search-container button svg {
+  margin-left: 5px;
+}

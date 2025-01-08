@@ -1,0 +1,32 @@
+.header {
+  position: fixed; /* 화면 상단에 고정 */
+  top: 0; /* 상단 기준 */
+  left: 0;
+  width: 100%; /* 화면 전체 너비 */
+  background-color: #f4f4f4; /* 헤더 배경색 */
+  padding: 15px 20px;
+  border-bottom: 1px solid #ccc;
+  z-index: 1000; /* 다른 요소 위에 표시 */
+}
+
+.nav-list {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-list li {
+  text-transform: uppercase;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.nav-list li a:hover {
+  color: #0073e6;
+}

@@ -1,0 +1,30 @@
+.search-list-item {
+  border: 1px solid #ddd;
+  margin-bottom: 2px;
+  text-align: center;
+  justify-content: center;
+  padding: 10px;
+  list-style-type: none;
+  text-align: left;
+  size: 5px;
+  font-weight: bold;
+}
+.search-list-item button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.search-list-item button:hover {
+  background-color: #0056b3;
+  transition: 0.1s, ease;
+}
+
+.search-list-item button svg {
+  margin-left: 5px;
+}
