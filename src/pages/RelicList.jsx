@@ -25,6 +25,12 @@ export default function RelicList() {
 
   return (
     <div style={{ textAlign: "center" }}>
+      <div
+        style={{
+        marginTop: isSearch ? "900px" : "0px", // 검색 중일 때 공백 추가
+        transition: "margin 0.3s ease", 
+        }}
+      ></div>
       <h1>e뮤지엄 소장품 조회</h1>
       <div>
         <input
@@ -67,8 +73,8 @@ export default function RelicList() {
       >
         <div
           style={{
-            width: "40%", // 컨테이너 너비 줄이기
-            maxWidth: "500px", // 화면이 커도 최대 너비 제한
+            width: "80%", // 컨테이너 너비 줄이기
+            maxWidth: "900px", // 화면이 커도 최대 너비 제한
             textAlign: "left", // 텍스트 왼쪽 정렬
           }}
         >
