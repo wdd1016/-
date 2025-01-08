@@ -2,10 +2,7 @@ import axios from "axios";
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 
-export default function MusicDetail() {
-    const params = useParams();
-    const artist = params.artist;
-    const title = params.title;
+export default function MusicDetail({ artist, title }) {
 
     const [lyrics, setLyrics] = useState("");
 
@@ -27,9 +24,9 @@ export default function MusicDetail() {
 
     return (
         <div>
-            <h1>음악 상세</h1>
-            <h2>{artist} - {title}</h2>
-            <p>{lyrics}</p>
+            <h1 className="detail">음악 상세</h1>
+            <h2 className="info">{artist} - {title}</h2>
+            <p className="lyrics">{lyrics}</p>
         </div>
     );
 };

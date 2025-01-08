@@ -1,32 +1,37 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import axios from 'axios';
 import SearchMusic from './SearchMusic';
 import './MyMusicList.css';
+import MusicDetail from './MusicDetail';
 
 export default function MyMusicList() {
     const [musicList, setMusicList] = useState([]);
-    const [isSearch, setIsSearch] = useState(false);
+    const [visibleDetail, setVisibleDetail] = useState(null);
+
+    const toggleDetail = (title) => {
+        setVisibleDetail(visibleDetail === title ? null : title);
+    };
 
     return (
         <div className="MusicList">
-            <h1>내 음악 조회</h1>
             <SearchMusic musicList={musicList} setMusicList={setMusicList} />
-            {
-                musicList.length === 0 ? isSearch && <p>검색 결과가 없습니다.</p> :
-                <ul className="musics">
-                    {
-                        musicList.map(music => (
-                            <li className="music" key={music.title}>
-                                <h1 className="title">
-                                    <Link to={`/musicdetail/${music.artist}/${music.title}`}>{music.title}</Link>
-                                </h1>
-                                <h2 className="artist">{music.artist}</h2>
-                            </li>
-                        ))
-                    }
-                </ul>
-            }
+            <ul className="musics">
+                { musicList.length !== 0 && <h2 className="playlist">내 플레이리스트</h2> }
+                {musicList.map((music) => (
+                    <li className="music" key={music.title}>
+                        <h2 className="title">{music.title}</h2>
+                        <h2 className="artist">{music.artist}</h2>
+                        <button
+                            className="detail"
+                            onClick={() => toggleDetail(music.title)}
+                        >
+                            상세 정보
+                        </button>
+                        {visibleDetail === music.title && (
+                            <MusicDetail artist={music.artist} title={music.title} />
+                        )}
+                    </li>
+                ))}
+            </ul>
         </div>
     );
-};
+}
