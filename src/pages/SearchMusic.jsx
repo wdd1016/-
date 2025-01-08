@@ -20,6 +20,7 @@ export default function SearchMusic({ musicList, setMusicList }) {
             })
             .catch(error => {
                 console.error(error);
+                setIsSearch(false);
             });
     };
 
