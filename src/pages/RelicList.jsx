@@ -102,15 +102,8 @@ export default function RelicList() {
                       textAlign: "center", // 제목 중앙 정렬
                     }}
                   >
-                    {relic.title || "제목 없음"}
+                    {`${relic.title || "제목 없음"}`}
                   </h3>
-                  <p>
-                    <strong>부제:</strong>{" "}
-                    {relic.alternativeTitle || "정보 없음"}
-                  </p>
-                  <p>
-                    <strong>등록일:</strong> {relic.regDate || "정보 없음"}
-                  </p>
                   <p>
                     <strong>크기:</strong> {relic.extent || "정보 없음"}
                   </p>
@@ -118,13 +111,7 @@ export default function RelicList() {
                     <strong>설명:</strong> {relic.description || "정보 없음"}
                   </p>
                   <p>
-                    <strong>출처:</strong> {relic.spatial || "정보 없음"}
-                  </p>
-                  <p>
                     <strong>시대:</strong> {relic.temporal || "정보 없음"}
-                  </p>
-                  <p>
-                    <strong>언어:</strong> {relic.language || "정보 없음"}
                   </p>
                   <p>
                     <strong>재질:</strong> {relic.medium || "정보 없음"}
