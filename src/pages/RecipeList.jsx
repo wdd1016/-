@@ -23,7 +23,7 @@ export default function RecipeList() {
 
   return (
     <div className="container">
-      <h1>Find-Your-ReCipe</h1>
+      <h1 id="findyourrecipe">Find-Your-ReCipe</h1>
       <div className="search">
         <input
           type="text"
