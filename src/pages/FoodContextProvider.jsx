@@ -60,7 +60,8 @@ const FoodContextProvider = ({ children }) => {
           }
         : item;
     });
-    setFoods(updatedFoods);
+    const result = updatedFoods.filter((item) => item.quantity !== 0);
+    setFoods(result);
   };
 
   return (
