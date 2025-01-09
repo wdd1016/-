@@ -8,7 +8,7 @@ export default function RelicList() {
 
   const searchRelic = () => {
     setIsSearch(true); // 검색 수행 여부 업데이트
-    const endpoint = `http://api.kcisa.kr/openapi/service/rest/meta/MPKreli?serviceKey=61e69856-19d1-4063-a67f-07785093b21a&numOfRows=30&pageNo=100`;
+    const endpoint = `http://api.kcisa.kr/openapi/service/rest/meta/MPKreli?serviceKey=서비스키&numOfRows=30&pageNo=100`;
     axios
       .get(endpoint)
       .then((res) => {
