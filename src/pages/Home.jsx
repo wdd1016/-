@@ -4,14 +4,14 @@ import './Home.css'; // 필요하면 스타일링 파일 추가
 
 function Home() {
   const services = [
-    { title: 'Karaoke Search', description: 'Search karaoke songs and lyrics.', linkPath: '/search' },
-    { title: 'Relic List', description: 'Browse relics and artifacts.', linkPath: '/reliclist' },
+    { title: '노래방 번호·가사 검색', description: 'Search karaoke songs and lyrics.', linkPath: '/search' },
+    { title: 'e뮤지엄 소장품 조회', description: 'Browse relics and artifacts.', linkPath: '/reliclist' },
     { title: 'Book List', description: 'View and manage your book collection.', linkPath: '/books' },
-    { title: 'Recipe List', description: 'Find recipes and cooking tips.', linkPath: '/recipeList' },
+    { title: '레시피 조회', description: 'Find recipes and cooking tips.', linkPath: '/recipeList' },
     { title: 'Food Management', description: 'Manage and search for food products.', linkPath: '/foodManage' },
-    { title: 'Search Info', description: 'Get detailed search information.', linkPath: '/searchInfo' },
-    { title: 'News List', description: 'Read the latest news articles.', linkPath: '/newsList2' },
-    { title: 'My Music List', description: 'Create and manage your music playlist.', linkPath: '/mymusiclist' },
+    { title: '장소 검색', description: 'Get detailed search information.', linkPath: '/searchInfo' },
+    { title: '뉴스 조회', description: 'Read the latest news articles.', linkPath: '/newsList2' },
+    { title: '음악 조회', description: 'Create and manage your music playlist.', linkPath: '/mymusiclist' },
   ];
 
   return (
