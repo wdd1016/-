@@ -5,11 +5,11 @@ import './Header.css'; // 필요하면 스타일링 파일 추가
 function Header() {
   return (
     <header className="header">
-      <h1>
-        <Link to="/" style={{ textDecoration: 'none', color: 'black' }} >My Services</Link>
-      </h1>
       <nav>
         <ul className="nav-list">
+          <li>
+           <Link to="/">My Services</Link>
+          </li>
           <li>
             <Link to="/search">노래방 번호 및 가사 검색</Link>
           </li>
