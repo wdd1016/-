@@ -1,14 +1,17 @@
 body {
   background-color: #e1e0df;
+  overflow: auto;
+  z-index: 1;
+  
 }
 .main-layout {
   border-radius: 5px;
   padding: 10px 10px;
   background-color: #aacff3;
-
   display: flex;
   justify-content: space-between;
   margin: 20px;
+  margin-top: 80px; 
 }
 
 .left-section {

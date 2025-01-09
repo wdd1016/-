@@ -1,0 +1,30 @@
+
+.flag{
+    background-color: #f0f5ef;
+
+    border-radius: 10px;
+    width: 220px;
+    text-align: center;
+    padding-bottom: 10px;
+    
+}
+
+.flag img{
+    margin-top: 10px;
+    width: 200px;
+    height: 100px;
+}
+
+.infos{
+    margin:10px;
+    font-size: 15px;
+    text-align: left;
+    font-weight:bold;
+}
+
+.title{
+    font-size:20px;
+    margin:10px;
+    text-align: center;
+    font-weight: bold;
+}
