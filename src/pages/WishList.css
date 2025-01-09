@@ -57,6 +57,7 @@
   background-color: #c0392b;
 }
 
-.wishlist ul li button svg {
-  margin-left: 5px;
+.wishlist li img {
+  width: 1.5em;
+  height: 1em;
 }
