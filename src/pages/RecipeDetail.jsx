@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
 import YouTube from "react-youtube";
+import "./RecipeList.css";
 
 const opts = {
   height: "390",
@@ -50,8 +51,8 @@ export default function RecipeDetail() {
   const instructions = recipe.strInstructions.split("\r\n");
 
   return (
-    <div>
-      <h1>{recipe.strMeal}</h1>
+    <div className="container">
+      <h1>레시피 - {recipe.strMeal}</h1>
       <img
         src={recipe.strMealThumb}
         alt={recipe.strMeal}
@@ -64,25 +65,25 @@ export default function RecipeDetail() {
         <strong>지역:</strong> {recipe.strArea}
       </p>
 
-      <h2>재료</h2>
-      <div>
+      <h2>재료(Ingredient)</h2>
+      <div className="infoIngredients">
         {/* 재료 출력 */}
         {ingredients.map((ingredient, index) => (
           <p key={index}>● {ingredient}</p>
         ))}
       </div>
 
-      <h2>조리 방법</h2>
-      <div>
+      <h2>조리 방법(How to Cook)</h2>
+      <div className="info">
         {/* 레시피 요소의 각 구간을 나누어 보여줌 */}
         {instructions.map((step, index) => (
-          <p key={index}>●{step}</p>
+          <p key={index}>● {step}</p>
         ))}
       </div>
 
       {/* 유튜브 영상 링크가 있으면 영상 출력 */}
       {videoId ? (
-        <div>
+        <div className="video">
           <h2>레시피 영상</h2>
           <YouTube videoId={videoId} opts={opts} />
         </div>

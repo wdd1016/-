@@ -1,44 +1,146 @@
-div.container{
-    width: 920px;
-    margin : 0 auto;
-    border: 1px solid red;
+div.container {
+  width: 920px;
+  margin: 50px auto;
+  border: 5px solid lightgray;
+  border-radius: 20px;
+  background-color: azure;
+  min-height: 700px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  padding: 50px;
+  text-align: center;
 }
-.search{
-    display: flex;
-    width: 100%;
+
+h1 {
+  font-style: italic;
+  font-size: 4rem;
+  color: gray;
+  text-align: center;
 }
+
+.search {
+  display: flex;
+  height: 50px;
+  width: 60%;
+  margin: 0 auto 50px;
+}
+
 .search input {
-    flex: 1;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px 0 0 4px;
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
 }
+
 .search button {
-    padding: 10px 20px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    background-color: #007bff;
-    color: white;
-    cursor: pointer;
-    border-radius: 0 4px 4px 0;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  background-color: #555555;
+  color: white;
+  cursor: pointer;
+  border-radius: 0 4px 4px 0;
 }
+
 .search button:hover {
-    background-color: #0056b3;
+  background-color: #333333;
 }
-div.movie{
-    display: flex;
-    border: 1px solid #ccc;
-    margin: 10px 0;
-    border-radius: 5px;
+
+div.recipe {
+  display: flex;
+  width: 80%;
+  border: 3px solid #d9d9d9;
+  margin: 10px 0;
+  border-radius: 5px;
+  margin: 0 auto 50px;
+  padding: 5px;
 }
-div.poster img{
-    width: 100px;
-    border-radius: 5px;
+
+div.poster img {
+  width: 200px;
+  border-radius: 25%;
+  margin-top: 10px;
+  margin-left: 10px;
 }
-div.text{
-    padding: 0 10px;
+
+div.poster h2 {
+  text-align: center;
+  color: gray;
+  font-weight: 900;
 }
+
+div.text {
+  padding: 0 10px;
+  line-height: 1.5;
+}
+
 div.text h1 {
-    font-size: 24px;
+  font-size: 24px;
+}
+
+div.text h1 a {
+  font-style: normal;
+  color: #555555;
+  text-decoration: none;
+}
+
+div.text p {
+  font-style: normal;
+  color: #555555;
+  margin-top: 50px;
+  margin-left: 10px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+div.text h1 a:hover {
+  color: #333333;
+  font-weight: 900;
+}
+
+div.poster img:hover {
+  width: 210px;
+}
+
+div.info {
+  padding: 0 10px;
+  line-height: 1.5;
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: #333333;
+  text-align: left;
+}
+
+div.container img {
+  display: inline-block;
+  align-items: center;
+  border-radius: 15%;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+div.container h2 {
+  font-size: 30px;
+  margin-top: 50px;
+  color: gray;
+}
+
+div.infoIngredients {
+  display: flex;
+  flex-wrap: wrap; /* 줄 바꿈 허용 */
+  gap: 10px;
+  justify-content: center;
+}
+
+div.infoIngredients p {
+  flex: 0 0 45%; /* 너비를 45%로 설정하여 한 줄에 두 개 배치 */
+  margin: 5px 0;
+  text-align: left;
+  font-size: 16px;
+}
+
+div video {
+  padding-bottom: 100px;
+}
+
+.infos {
+  text-align: left;
 }
