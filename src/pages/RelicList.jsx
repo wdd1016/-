@@ -73,9 +73,8 @@ export default function RelicList() {
       >
         <div
           style={{
-            width: "80%", // 컨테이너 너비 줄이기
-            maxWidth: "900px", // 화면이 커도 최대 너비 제한
-            textAlign: "left", // 텍스트 왼쪽 정렬
+            width: "700px", 
+            textAlign: "left", 
           }}
         >
           {isSearch && relics.length === 0 && (
