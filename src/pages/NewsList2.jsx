@@ -10,7 +10,7 @@ export default function NewsList2() {
   const navigate = useNavigate();
 
   const searchNews = () => {
-    const endpoint = `https://newsapi.org/v2/everything?q=${title}&apiKey=c23a60d4725b4c778bf968e89740dab4`;
+    const endpoint = `https://newsapi.org/v2/everything?q=${title}&apiKey=API키`;
     axios
       .get(endpoint)
       .then((res) => {
