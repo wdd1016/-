@@ -1,0 +1,89 @@
+/* 전체 컨테이너 */
+.dog-search-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* 제목 */
+.dog-search-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* 입력창 + 버튼 감싸는 박스 */
+.dog-search-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* 검색어 입력창 */
+.dog-search-input {
+  width: 300px;
+  font-size: 16px;
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  outline: none;
+  margin-right: 10px;
+}
+
+/* 조회 버튼 */
+.dog-search-button {
+  font-size: 16px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: none;
+  background-color: #4caf50; /* 버튼 배경색 */
+  color: #fff; /* 텍스트 색상 */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dog-search-button:hover {
+  background-color: #45a049; /* 버튼 호버 효과 */
+}
+
+/* 검색 결과가 없을 때 나오는 메시지 */
+.dog-search-no-result {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 18px;
+  color: #999;
+}
+
+/* 카드들을 감싸는 래퍼(플렉스 레이아웃) */
+.dog-cards-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* 개별 카드 스타일 */
+.dog-card {
+  width: 250px;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  margin: 10px;
+  overflow: hidden;
+  text-align: center;
+}
+
+/* 카드 제목(강아지 종) */
+.dog-card-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 12px 0;
+}
+
+/* 카드 내 강아지 이미지 */
+.dog-card-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover; /* 이미지가 찌그러지지 않고 꽉 차도록 */
+  border-top: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+}
