@@ -4,13 +4,10 @@
   box-sizing: border-box;
 }
 
-body {
+body .karaoke-container {
   font-family: "Arial", sans-serif;
   background-color: #f4f4f9;
   color: #333;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   height: 100vh;
   background-image: url("https://images.unsplash.com/photo-1551743258-e8f4fbd35c7d");
   background-size: cover;
@@ -19,7 +16,7 @@ body {
 
 .karaoke-container {
   background-color: rgba(255, 255, 255, 0.8);
-  padding: 20px;
+  padding: 150px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   width: 100%;

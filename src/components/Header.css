@@ -1,12 +1,11 @@
 .header {
-  position: fixed; /* 화면 상단에 고정 */
-  top: 0; /* 상단 기준 */
+  position: sticky; /* 스크롤 시 고정 */
+  top: 0; /* 화면 상단에 고정 */
   left: 0;
-  width: 100%; /* 화면 전체 너비 */
-  background-color: #f4f4f4; /* 헤더 배경색 */
-  padding: 15px 20px;
-  border-bottom: 1px solid #ccc;
-  z-index: 1000; /* 다른 요소 위에 표시 */
+  z-index: 1000; /* 다른 요소 위에 배치 */
+  background-color: rgba(255, 255, 255, 0.9); /* 살짝 투명한 흰색 배경 */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+  padding: 10px 20px; /* 헤더 안쪽 여백 */
 }
 
 .nav-list {

@@ -1,6 +1,6 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import './Header.css'; // 필요하면 스타일링 파일 추가
+import React from "react";
+import { Link } from "react-router-dom";
+import "./Header.css"; // 필요하면 스타일링 파일 추가
 
 function Header() {
   return (
@@ -8,7 +8,7 @@ function Header() {
       <nav>
         <ul className="nav-list">
           <li>
-           <Link to="/">My Services</Link>
+            <Link to="/">My Services</Link>
           </li>
           <li>
             <Link to="/search">노래방 번호 및 가사 검색</Link>
@@ -33,6 +33,9 @@ function Header() {
           </li>
           <li>
             <Link to="/mymusiclist">음악 조회</Link>
+          </li>
+          <li>
+            <Link to="/dogsearch">강아지 조회</Link>
           </li>
         </ul>
       </nav>
