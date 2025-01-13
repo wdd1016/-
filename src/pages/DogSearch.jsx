@@ -37,6 +37,7 @@ export default function DogSearch() {
         });
     });
     setIsEmpty(false);
+    setIsSearch(false);
   };
 
   // dogs 상태가 변경될 때마다 콘솔에 출력
